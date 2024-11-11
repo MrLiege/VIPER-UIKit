@@ -1,0 +1,1052 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0CA5A5942CCFC6D700A484DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5A5932CCFC6D700A484DB /* AppDelegate.swift */; };
+		0CA5A5962CCFC6D700A484DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5A5952CCFC6D700A484DB /* SceneDelegate.swift */; };
+		0CA5A5982CCFC6D700A484DB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5A5972CCFC6D700A484DB /* LoginViewController.swift */; };
+		0CA5A59D2CCFC6D900A484DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CA5A59C2CCFC6D900A484DB /* Assets.xcassets */; };
+		0CA5A5A02CCFC6D900A484DB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 0CA5A59F2CCFC6D900A484DB /* Base */; };
+		0CA5A5A92CCFC85000A484DB /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 0CA5A5A82CCFC85000A484DB /* CombineMoya */; };
+		0CA5A5AB2CCFC85000A484DB /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 0CA5A5AA2CCFC85000A484DB /* Moya */; };
+		0CA5A5AD2CCFC85000A484DB /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 0CA5A5AC2CCFC85000A484DB /* ReactiveMoya */; };
+		0CA5A5AF2CCFC85000A484DB /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 0CA5A5AE2CCFC85000A484DB /* RxMoya */; };
+		0CA5A5B72CCFC9C100A484DB /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0CA5A5B62CCFC9C100A484DB /* SnapKit */; };
+		0CA5A5C22CCFF15300A484DB /* ServerLoginEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5A5C12CCFF15300A484DB /* ServerLoginEntity.swift */; };
+		0CA5A5C42CCFF16B00A484DB /* LocalLoginEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5A5C32CCFF16B00A484DB /* LocalLoginEntity.swift */; };
+		0CA5A5C62CCFF2C700A484DB /* AuthEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5A5C52CCFF2C700A484DB /* AuthEndpoint.swift */; };
+		0CA5A5C82CCFF2CF00A484DB /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5A5C72CCFF2CF00A484DB /* AuthService.swift */; };
+		0CA5A5CB2CCFF53A00A484DB /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5A5CA2CCFF53A00A484DB /* LoginInteractor.swift */; };
+		0CA5A5CE2CCFF5E400A484DB /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5A5CD2CCFF5E400A484DB /* LoginPresenter.swift */; };
+		0CA5A5D22CCFF8DB00A484DB /* CoffeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5A5D12CCFF8DB00A484DB /* CoffeTextField.swift */; };
+		0CA5A5D92CD0128C00A484DB /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5A5D82CD0128C00A484DB /* Color+Extension.swift */; };
+		0CA5A5DC2CD014A300A484DB /* CoffeTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5A5DB2CD014A300A484DB /* CoffeTitleLabel.swift */; };
+		0CA5A5DF2CD0152C00A484DB /* LabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5A5DE2CD0152B00A484DB /* LabelTextField.swift */; };
+		0CA5A5E22CD0E42200A484DB /* CoffeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5A5E12CD0E42200A484DB /* CoffeButton.swift */; };
+		0CA5A5E72CD1180500A484DB /* UserStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5A5E62CD1180500A484DB /* UserStorage.swift */; };
+		0CA5A5EA2CD11E0000A484DB /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5A5E92CD11E0000A484DB /* LoginRouter.swift */; };
+		0CA5A5ED2CD11EB000A484DB /* CoffeeShopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5A5EC2CD11EB000A484DB /* CoffeeShopsViewController.swift */; };
+		0CA5A5F02CD131BD00A484DB /* GlobalRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5A5EF2CD131BD00A484DB /* GlobalRouter.swift */; };
+		0CA5A5F62CD1413000A484DB /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5A5F52CD1413000A484DB /* LocationManager.swift */; };
+		0CA5A5F82CD1482B00A484DB /* LocationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5A5F72CD1482B00A484DB /* LocationResponse.swift */; };
+		0CA5A5FA2CD1484E00A484DB /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5A5F92CD1484E00A484DB /* Point.swift */; };
+		0CA5A5FD2CD152EB00A484DB /* CoffeeShopsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5A5FC2CD152EB00A484DB /* CoffeeShopsInteractor.swift */; };
+		0CA5A6002CD153AD00A484DB /* CoffeeShopsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5A5FF2CD153AD00A484DB /* CoffeeShopsPresenter.swift */; };
+		0CA5A6042CD153FE00A484DB /* CoffeeShopsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5A6032CD153FE00A484DB /* CoffeeShopsRouter.swift */; };
+		0CA5A6082CD1545F00A484DB /* LocationEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5A6072CD1545F00A484DB /* LocationEndpoint.swift */; };
+		0CA5A60A2CD1547200A484DB /* CoffeeShopsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5A6092CD1547200A484DB /* CoffeeShopsService.swift */; };
+		0CA5A60C2CD15A7D00A484DB /* CoffeeShop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5A60B2CD15A7D00A484DB /* CoffeeShop.swift */; };
+		0CA5A6102CD22A6400A484DB /* CoffeeShopsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5A60F2CD22A6400A484DB /* CoffeeShopsView.swift */; };
+		0CA5A6132CD22F9B00A484DB /* CoffeeShopsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5A6122CD22F9B00A484DB /* CoffeeShopsCell.swift */; };
+		0CA5A61F2CD27FF100A484DB /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5A61E2CD27FF100A484DB /* MenuView.swift */; };
+		0CA5A6212CD29D0600A484DB /* CoffeeValueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5A6202CD29D0600A484DB /* CoffeeValueButton.swift */; };
+		0CA5A6252CD37C8200A484DB /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5A6242CD37C8100A484DB /* MenuCell.swift */; };
+		0CA5A6272CD37D1500A484DB /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5A6262CD37D1500A484DB /* MenuViewController.swift */; };
+		0CA5A6292CD37F8F00A484DB /* MenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5A6282CD37F8F00A484DB /* MenuPresenter.swift */; };
+		0CA5A62B2CD37F9A00A484DB /* MenuInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5A62A2CD37F9A00A484DB /* MenuInteractor.swift */; };
+		0CA5A62D2CD37FA600A484DB /* MenuEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5A62C2CD37FA600A484DB /* MenuEntity.swift */; };
+		0CA5A62F2CD37FAD00A484DB /* MenuRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5A62E2CD37FAD00A484DB /* MenuRouter.swift */; };
+		0CA5A6322CD37FF500A484DB /* MenuEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5A6312CD37FF500A484DB /* MenuEndpoint.swift */; };
+		0CA5A6342CD3800200A484DB /* MenuService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5A6332CD3800200A484DB /* MenuService.swift */; };
+		0CA5A63D2CD4D63A00A484DB /* OrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5A63C2CD4D63A00A484DB /* OrdersViewController.swift */; };
+		0CA5A63F2CD4D64D00A484DB /* OrdersRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5A63E2CD4D64D00A484DB /* OrdersRouter.swift */; };
+		0CA5A6412CD4D65700A484DB /* OrdersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5A6402CD4D65700A484DB /* OrdersPresenter.swift */; };
+		0CA5A6432CD4D66100A484DB /* OrdersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5A6422CD4D66100A484DB /* OrdersInteractor.swift */; };
+		0CA5A6452CD4D66A00A484DB /* OrdersEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5A6442CD4D66A00A484DB /* OrdersEntity.swift */; };
+		0CA5A64A2CD4D98D00A484DB /* OrdersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5A6492CD4D98D00A484DB /* OrdersView.swift */; };
+		0CA5A64C2CD4DE9600A484DB /* OrdersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5A64B2CD4DE9600A484DB /* OrdersCell.swift */; };
+		0CA5A6592CDBE8CC00A484DB /* RegistrationEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5A6582CDBE8CC00A484DB /* RegistrationEntity.swift */; };
+		0CA5A65B2CDBE8FA00A484DB /* RegistrationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5A65A2CDBE8FA00A484DB /* RegistrationInteractor.swift */; };
+		0CA5A65D2CDBE90600A484DB /* RegistrationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5A65C2CDBE90600A484DB /* RegistrationPresenter.swift */; };
+		0CA5A65F2CDBE91C00A484DB /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5A65E2CDBE91C00A484DB /* RegistrationViewController.swift */; };
+		0CA5A6612CDBE92B00A484DB /* RegistrationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5A6602CDBE92B00A484DB /* RegistrationRouter.swift */; };
+		0CA5A6632CDBF8E100A484DB /* RegistrationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5A6622CDBF8E100A484DB /* RegistrationService.swift */; };
+		0CA5A6692CDCB49E00A484DB /* LocalRegistrationEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5A6682CDCB49E00A484DB /* LocalRegistrationEntity.swift */; };
+		0CA5A66C2CDEB0AA00A484DB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5A66B2CDEB0AA00A484DB /* BaseViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0CA5A5902CCFC6D700A484DB /* CoffeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CA5A5932CCFC6D700A484DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0CA5A5952CCFC6D700A484DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0CA5A5972CCFC6D700A484DB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0CA5A59C2CCFC6D900A484DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0CA5A59F2CCFC6D900A484DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0CA5A5A12CCFC6D900A484DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CA5A5C12CCFF15300A484DB /* ServerLoginEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerLoginEntity.swift; sourceTree = "<group>"; };
+		0CA5A5C32CCFF16B00A484DB /* LocalLoginEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalLoginEntity.swift; sourceTree = "<group>"; };
+		0CA5A5C52CCFF2C700A484DB /* AuthEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthEndpoint.swift; sourceTree = "<group>"; };
+		0CA5A5C72CCFF2CF00A484DB /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		0CA5A5CA2CCFF53A00A484DB /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		0CA5A5CD2CCFF5E400A484DB /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		0CA5A5D12CCFF8DB00A484DB /* CoffeTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeTextField.swift; sourceTree = "<group>"; };
+		0CA5A5D82CD0128C00A484DB /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		0CA5A5DB2CD014A300A484DB /* CoffeTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeTitleLabel.swift; sourceTree = "<group>"; };
+		0CA5A5DE2CD0152B00A484DB /* LabelTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelTextField.swift; sourceTree = "<group>"; };
+		0CA5A5E12CD0E42200A484DB /* CoffeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeButton.swift; sourceTree = "<group>"; };
+		0CA5A5E62CD1180500A484DB /* UserStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStorage.swift; sourceTree = "<group>"; };
+		0CA5A5E92CD11E0000A484DB /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		0CA5A5EC2CD11EB000A484DB /* CoffeeShopsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopsViewController.swift; sourceTree = "<group>"; };
+		0CA5A5EF2CD131BD00A484DB /* GlobalRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalRouter.swift; sourceTree = "<group>"; };
+		0CA5A5F52CD1413000A484DB /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		0CA5A5F72CD1482B00A484DB /* LocationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationResponse.swift; sourceTree = "<group>"; };
+		0CA5A5F92CD1484E00A484DB /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		0CA5A5FC2CD152EB00A484DB /* CoffeeShopsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopsInteractor.swift; sourceTree = "<group>"; };
+		0CA5A5FF2CD153AD00A484DB /* CoffeeShopsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopsPresenter.swift; sourceTree = "<group>"; };
+		0CA5A6032CD153FE00A484DB /* CoffeeShopsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopsRouter.swift; sourceTree = "<group>"; };
+		0CA5A6072CD1545F00A484DB /* LocationEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationEndpoint.swift; sourceTree = "<group>"; };
+		0CA5A6092CD1547200A484DB /* CoffeeShopsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopsService.swift; sourceTree = "<group>"; };
+		0CA5A60B2CD15A7D00A484DB /* CoffeeShop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShop.swift; sourceTree = "<group>"; };
+		0CA5A60F2CD22A6400A484DB /* CoffeeShopsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopsView.swift; sourceTree = "<group>"; };
+		0CA5A6122CD22F9B00A484DB /* CoffeeShopsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopsCell.swift; sourceTree = "<group>"; };
+		0CA5A61E2CD27FF100A484DB /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		0CA5A6202CD29D0600A484DB /* CoffeeValueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeValueButton.swift; sourceTree = "<group>"; };
+		0CA5A6242CD37C8100A484DB /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		0CA5A6262CD37D1500A484DB /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		0CA5A6282CD37F8F00A484DB /* MenuPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPresenter.swift; sourceTree = "<group>"; };
+		0CA5A62A2CD37F9A00A484DB /* MenuInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuInteractor.swift; sourceTree = "<group>"; };
+		0CA5A62C2CD37FA600A484DB /* MenuEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuEntity.swift; sourceTree = "<group>"; };
+		0CA5A62E2CD37FAD00A484DB /* MenuRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRouter.swift; sourceTree = "<group>"; };
+		0CA5A6312CD37FF500A484DB /* MenuEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuEndpoint.swift; sourceTree = "<group>"; };
+		0CA5A6332CD3800200A484DB /* MenuService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuService.swift; sourceTree = "<group>"; };
+		0CA5A63C2CD4D63A00A484DB /* OrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersViewController.swift; sourceTree = "<group>"; };
+		0CA5A63E2CD4D64D00A484DB /* OrdersRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersRouter.swift; sourceTree = "<group>"; };
+		0CA5A6402CD4D65700A484DB /* OrdersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersPresenter.swift; sourceTree = "<group>"; };
+		0CA5A6422CD4D66100A484DB /* OrdersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersInteractor.swift; sourceTree = "<group>"; };
+		0CA5A6442CD4D66A00A484DB /* OrdersEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersEntity.swift; sourceTree = "<group>"; };
+		0CA5A6492CD4D98D00A484DB /* OrdersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersView.swift; sourceTree = "<group>"; };
+		0CA5A64B2CD4DE9600A484DB /* OrdersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersCell.swift; sourceTree = "<group>"; };
+		0CA5A6582CDBE8CC00A484DB /* RegistrationEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationEntity.swift; sourceTree = "<group>"; };
+		0CA5A65A2CDBE8FA00A484DB /* RegistrationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationInteractor.swift; sourceTree = "<group>"; };
+		0CA5A65C2CDBE90600A484DB /* RegistrationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationPresenter.swift; sourceTree = "<group>"; };
+		0CA5A65E2CDBE91C00A484DB /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		0CA5A6602CDBE92B00A484DB /* RegistrationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationRouter.swift; sourceTree = "<group>"; };
+		0CA5A6622CDBF8E100A484DB /* RegistrationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationService.swift; sourceTree = "<group>"; };
+		0CA5A6682CDCB49E00A484DB /* LocalRegistrationEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalRegistrationEntity.swift; sourceTree = "<group>"; };
+		0CA5A66B2CDEB0AA00A484DB /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0CA5A58D2CCFC6D700A484DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CA5A5AB2CCFC85000A484DB /* Moya in Frameworks */,
+				0CA5A5A92CCFC85000A484DB /* CombineMoya in Frameworks */,
+				0CA5A5AF2CCFC85000A484DB /* RxMoya in Frameworks */,
+				0CA5A5AD2CCFC85000A484DB /* ReactiveMoya in Frameworks */,
+				0CA5A5B72CCFC9C100A484DB /* SnapKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0CA5A5872CCFC6D700A484DB = {
+			isa = PBXGroup;
+			children = (
+				0CA5A5922CCFC6D700A484DB /* CoffeApp */,
+				0CA5A5912CCFC6D700A484DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0CA5A5912CCFC6D700A484DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5A5902CCFC6D700A484DB /* CoffeApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0CA5A5922CCFC6D700A484DB /* CoffeApp */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5A5B82CCFEA3100A484DB /* App */,
+				0CA5A5B92CCFEA5600A484DB /* Resources */,
+				0CA5A5EE2CD1319900A484DB /* GlobalRouter */,
+				0CA5A5BA2CCFEC1C00A484DB /* Services */,
+				0CA5A5BE2CCFF11D00A484DB /* Modules */,
+				0CA5A5D02CCFF78400A484DB /* UI CustomView */,
+				0CA5A5D42CD0121300A484DB /* Helpers */,
+			);
+			path = CoffeApp;
+			sourceTree = "<group>";
+		};
+		0CA5A5B82CCFEA3100A484DB /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5A5932CCFC6D700A484DB /* AppDelegate.swift */,
+				0CA5A5952CCFC6D700A484DB /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		0CA5A5B92CCFEA5600A484DB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5A59C2CCFC6D900A484DB /* Assets.xcassets */,
+				0CA5A59E2CCFC6D900A484DB /* LaunchScreen.storyboard */,
+				0CA5A5A12CCFC6D900A484DB /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0CA5A5BA2CCFEC1C00A484DB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5A5F12CD13A4900A484DB /* LocationManager */,
+				0CA5A5E52CD117A600A484DB /* Storages */,
+				0CA5A5BB2CCFEC5500A484DB /* API */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0CA5A5BB2CCFEC5500A484DB /* API */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5A6302CD37FDF00A484DB /* Menu */,
+				0CA5A6052CD1541D00A484DB /* CoffeeShops */,
+				0CA5A5BC2CCFEC8500A484DB /* Authorization */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		0CA5A5BC2CCFEC8500A484DB /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5A6622CDBF8E100A484DB /* RegistrationService.swift */,
+				0CA5A5C72CCFF2CF00A484DB /* AuthService.swift */,
+				0CA5A5C52CCFF2C700A484DB /* AuthEndpoint.swift */,
+			);
+			path = Authorization;
+			sourceTree = "<group>";
+		};
+		0CA5A5BE2CCFF11D00A484DB /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5A6352CD4D5D800A484DB /* Orders */,
+				0CA5A6172CD27F7400A484DB /* Menu */,
+				0CA5A5EB2CD11E8C00A484DB /* CoffeeShops */,
+				0CA5A5BF2CCFF13A00A484DB /* Login */,
+				0CA5A6522CDBE81500A484DB /* Registration */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		0CA5A5BF2CCFF13A00A484DB /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5A5E82CD11DDF00A484DB /* Router */,
+				0CA5A5CF2CCFF66B00A484DB /* ViewController */,
+				0CA5A5CC2CCFF5D700A484DB /* Presenter */,
+				0CA5A5C92CCFF52200A484DB /* Interactor */,
+				0CA5A5C02CCFF14700A484DB /* Entity */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		0CA5A5C02CCFF14700A484DB /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5A5C12CCFF15300A484DB /* ServerLoginEntity.swift */,
+				0CA5A5C32CCFF16B00A484DB /* LocalLoginEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		0CA5A5C92CCFF52200A484DB /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5A5CA2CCFF53A00A484DB /* LoginInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		0CA5A5CC2CCFF5D700A484DB /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5A5CD2CCFF5E400A484DB /* LoginPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		0CA5A5CF2CCFF66B00A484DB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5A5972CCFC6D700A484DB /* LoginViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		0CA5A5D02CCFF78400A484DB /* UI CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5A66A2CDEB09300A484DB /* BaseViewController */,
+				0CA5A6112CD22D9000A484DB /* Views */,
+				0CA5A60D2CD22A2700A484DB /* Cells */,
+				0CA5A5E02CD0E3FB00A484DB /* Buttons */,
+				0CA5A5DD2CD014FD00A484DB /* Label+TextField */,
+				0CA5A5DA2CD0147C00A484DB /* TitleLabel */,
+				0CA5A5D32CCFF8DF00A484DB /* TextFields */,
+			);
+			path = "UI CustomView";
+			sourceTree = "<group>";
+		};
+		0CA5A5D32CCFF8DF00A484DB /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5A5D12CCFF8DB00A484DB /* CoffeTextField.swift */,
+			);
+			path = TextFields;
+			sourceTree = "<group>";
+		};
+		0CA5A5D42CD0121300A484DB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5A5D52CD0122D00A484DB /* Extensions */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		0CA5A5D52CD0122D00A484DB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5A5D62CD0123500A484DB /* Colors */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0CA5A5D62CD0123500A484DB /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5A5D82CD0128C00A484DB /* Color+Extension.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		0CA5A5DA2CD0147C00A484DB /* TitleLabel */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5A5DB2CD014A300A484DB /* CoffeTitleLabel.swift */,
+			);
+			path = TitleLabel;
+			sourceTree = "<group>";
+		};
+		0CA5A5DD2CD014FD00A484DB /* Label+TextField */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5A5DE2CD0152B00A484DB /* LabelTextField.swift */,
+			);
+			path = "Label+TextField";
+			sourceTree = "<group>";
+		};
+		0CA5A5E02CD0E3FB00A484DB /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5A5E12CD0E42200A484DB /* CoffeButton.swift */,
+				0CA5A6202CD29D0600A484DB /* CoffeeValueButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		0CA5A5E52CD117A600A484DB /* Storages */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5A5E62CD1180500A484DB /* UserStorage.swift */,
+			);
+			path = Storages;
+			sourceTree = "<group>";
+		};
+		0CA5A5E82CD11DDF00A484DB /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5A5E92CD11E0000A484DB /* LoginRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		0CA5A5EB2CD11E8C00A484DB /* CoffeeShops */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5A6022CD153EA00A484DB /* Router */,
+				0CA5A6012CD153D400A484DB /* ViewController */,
+				0CA5A5FE2CD1538100A484DB /* Presenter */,
+				0CA5A5FB2CD152CE00A484DB /* Interactor */,
+				0CA5A5F22CD13B0200A484DB /* Entity */,
+			);
+			path = CoffeeShops;
+			sourceTree = "<group>";
+		};
+		0CA5A5EE2CD1319900A484DB /* GlobalRouter */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5A5EF2CD131BD00A484DB /* GlobalRouter.swift */,
+			);
+			path = GlobalRouter;
+			sourceTree = "<group>";
+		};
+		0CA5A5F12CD13A4900A484DB /* LocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5A5F52CD1413000A484DB /* LocationManager.swift */,
+			);
+			path = LocationManager;
+			sourceTree = "<group>";
+		};
+		0CA5A5F22CD13B0200A484DB /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5A5F72CD1482B00A484DB /* LocationResponse.swift */,
+				0CA5A5F92CD1484E00A484DB /* Point.swift */,
+				0CA5A60B2CD15A7D00A484DB /* CoffeeShop.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		0CA5A5FB2CD152CE00A484DB /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5A5FC2CD152EB00A484DB /* CoffeeShopsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		0CA5A5FE2CD1538100A484DB /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5A5FF2CD153AD00A484DB /* CoffeeShopsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		0CA5A6012CD153D400A484DB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5A5EC2CD11EB000A484DB /* CoffeeShopsViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		0CA5A6022CD153EA00A484DB /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5A6032CD153FE00A484DB /* CoffeeShopsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		0CA5A6052CD1541D00A484DB /* CoffeeShops */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5A6072CD1545F00A484DB /* LocationEndpoint.swift */,
+				0CA5A6092CD1547200A484DB /* CoffeeShopsService.swift */,
+			);
+			path = CoffeeShops;
+			sourceTree = "<group>";
+		};
+		0CA5A60D2CD22A2700A484DB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5A6122CD22F9B00A484DB /* CoffeeShopsCell.swift */,
+				0CA5A6242CD37C8100A484DB /* MenuCell.swift */,
+				0CA5A64B2CD4DE9600A484DB /* OrdersCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		0CA5A6112CD22D9000A484DB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5A60F2CD22A6400A484DB /* CoffeeShopsView.swift */,
+				0CA5A61E2CD27FF100A484DB /* MenuView.swift */,
+				0CA5A6492CD4D98D00A484DB /* OrdersView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0CA5A6172CD27F7400A484DB /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5A61C2CD27FA800A484DB /* Router */,
+				0CA5A61B2CD27F9C00A484DB /* ViewController */,
+				0CA5A61A2CD27F9600A484DB /* Presenter */,
+				0CA5A6192CD27F8C00A484DB /* Interactor */,
+				0CA5A6182CD27F8300A484DB /* Entity */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		0CA5A6182CD27F8300A484DB /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5A62C2CD37FA600A484DB /* MenuEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		0CA5A6192CD27F8C00A484DB /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5A62A2CD37F9A00A484DB /* MenuInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		0CA5A61A2CD27F9600A484DB /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5A6282CD37F8F00A484DB /* MenuPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		0CA5A61B2CD27F9C00A484DB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5A6262CD37D1500A484DB /* MenuViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		0CA5A61C2CD27FA800A484DB /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5A62E2CD37FAD00A484DB /* MenuRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		0CA5A6302CD37FDF00A484DB /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5A6312CD37FF500A484DB /* MenuEndpoint.swift */,
+				0CA5A6332CD3800200A484DB /* MenuService.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		0CA5A6352CD4D5D800A484DB /* Orders */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5A63A2CD4D61100A484DB /* Router */,
+				0CA5A6392CD4D60500A484DB /* ViewController */,
+				0CA5A6382CD4D5FD00A484DB /* Presenter */,
+				0CA5A6372CD4D5F600A484DB /* Interactor */,
+				0CA5A6362CD4D5EA00A484DB /* Entity */,
+			);
+			path = Orders;
+			sourceTree = "<group>";
+		};
+		0CA5A6362CD4D5EA00A484DB /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5A6442CD4D66A00A484DB /* OrdersEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		0CA5A6372CD4D5F600A484DB /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5A6422CD4D66100A484DB /* OrdersInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		0CA5A6382CD4D5FD00A484DB /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5A6402CD4D65700A484DB /* OrdersPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		0CA5A6392CD4D60500A484DB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5A63C2CD4D63A00A484DB /* OrdersViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		0CA5A63A2CD4D61100A484DB /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5A63E2CD4D64D00A484DB /* OrdersRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		0CA5A6522CDBE81500A484DB /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5A6572CDBE89600A484DB /* Router */,
+				0CA5A6562CDBE88D00A484DB /* ViewController */,
+				0CA5A6552CDBE88300A484DB /* Presenter */,
+				0CA5A6542CDBE82F00A484DB /* Interactor */,
+				0CA5A6532CDBE82800A484DB /* Entity */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		0CA5A6532CDBE82800A484DB /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5A6582CDBE8CC00A484DB /* RegistrationEntity.swift */,
+				0CA5A6682CDCB49E00A484DB /* LocalRegistrationEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		0CA5A6542CDBE82F00A484DB /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5A65A2CDBE8FA00A484DB /* RegistrationInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		0CA5A6552CDBE88300A484DB /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5A65C2CDBE90600A484DB /* RegistrationPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		0CA5A6562CDBE88D00A484DB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5A65E2CDBE91C00A484DB /* RegistrationViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		0CA5A6572CDBE89600A484DB /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5A6602CDBE92B00A484DB /* RegistrationRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		0CA5A66A2CDEB09300A484DB /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5A66B2CDEB0AA00A484DB /* BaseViewController.swift */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0CA5A58F2CCFC6D700A484DB /* CoffeApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CA5A5A42CCFC6D900A484DB /* Build configuration list for PBXNativeTarget "CoffeApp" */;
+			buildPhases = (
+				0CA5A58C2CCFC6D700A484DB /* Sources */,
+				0CA5A58D2CCFC6D700A484DB /* Frameworks */,
+				0CA5A58E2CCFC6D700A484DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoffeApp;
+			packageProductDependencies = (
+				0CA5A5A82CCFC85000A484DB /* CombineMoya */,
+				0CA5A5AA2CCFC85000A484DB /* Moya */,
+				0CA5A5AC2CCFC85000A484DB /* ReactiveMoya */,
+				0CA5A5AE2CCFC85000A484DB /* RxMoya */,
+				0CA5A5B62CCFC9C100A484DB /* SnapKit */,
+			);
+			productName = CoffeApp;
+			productReference = 0CA5A5902CCFC6D700A484DB /* CoffeApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0CA5A5882CCFC6D700A484DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					0CA5A58F2CCFC6D700A484DB = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 0CA5A58B2CCFC6D700A484DB /* Build configuration list for PBXProject "CoffeApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0CA5A5872CCFC6D700A484DB;
+			packageReferences = (
+				0CA5A5A72CCFC85000A484DB /* XCRemoteSwiftPackageReference "Moya" */,
+				0CA5A5B52CCFC9C100A484DB /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
+			productRefGroup = 0CA5A5912CCFC6D700A484DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0CA5A58F2CCFC6D700A484DB /* CoffeApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0CA5A58E2CCFC6D700A484DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CA5A59D2CCFC6D900A484DB /* Assets.xcassets in Resources */,
+				0CA5A5A02CCFC6D900A484DB /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0CA5A58C2CCFC6D700A484DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CA5A62B2CD37F9A00A484DB /* MenuInteractor.swift in Sources */,
+				0CA5A6432CD4D66100A484DB /* OrdersInteractor.swift in Sources */,
+				0CA5A6612CDBE92B00A484DB /* RegistrationRouter.swift in Sources */,
+				0CA5A6102CD22A6400A484DB /* CoffeeShopsView.swift in Sources */,
+				0CA5A60C2CD15A7D00A484DB /* CoffeeShop.swift in Sources */,
+				0CA5A66C2CDEB0AA00A484DB /* BaseViewController.swift in Sources */,
+				0CA5A5E72CD1180500A484DB /* UserStorage.swift in Sources */,
+				0CA5A5982CCFC6D700A484DB /* LoginViewController.swift in Sources */,
+				0CA5A6272CD37D1500A484DB /* MenuViewController.swift in Sources */,
+				0CA5A64C2CD4DE9600A484DB /* OrdersCell.swift in Sources */,
+				0CA5A5ED2CD11EB000A484DB /* CoffeeShopsViewController.swift in Sources */,
+				0CA5A5D22CCFF8DB00A484DB /* CoffeTextField.swift in Sources */,
+				0CA5A6342CD3800200A484DB /* MenuService.swift in Sources */,
+				0CA5A5942CCFC6D700A484DB /* AppDelegate.swift in Sources */,
+				0CA5A5E22CD0E42200A484DB /* CoffeButton.swift in Sources */,
+				0CA5A5C62CCFF2C700A484DB /* AuthEndpoint.swift in Sources */,
+				0CA5A65F2CDBE91C00A484DB /* RegistrationViewController.swift in Sources */,
+				0CA5A5F82CD1482B00A484DB /* LocationResponse.swift in Sources */,
+				0CA5A5FD2CD152EB00A484DB /* CoffeeShopsInteractor.swift in Sources */,
+				0CA5A5EA2CD11E0000A484DB /* LoginRouter.swift in Sources */,
+				0CA5A5DF2CD0152C00A484DB /* LabelTextField.swift in Sources */,
+				0CA5A5CE2CCFF5E400A484DB /* LoginPresenter.swift in Sources */,
+				0CA5A5FA2CD1484E00A484DB /* Point.swift in Sources */,
+				0CA5A60A2CD1547200A484DB /* CoffeeShopsService.swift in Sources */,
+				0CA5A65D2CDBE90600A484DB /* RegistrationPresenter.swift in Sources */,
+				0CA5A64A2CD4D98D00A484DB /* OrdersView.swift in Sources */,
+				0CA5A5C42CCFF16B00A484DB /* LocalLoginEntity.swift in Sources */,
+				0CA5A6452CD4D66A00A484DB /* OrdersEntity.swift in Sources */,
+				0CA5A5F62CD1413000A484DB /* LocationManager.swift in Sources */,
+				0CA5A6132CD22F9B00A484DB /* CoffeeShopsCell.swift in Sources */,
+				0CA5A5F02CD131BD00A484DB /* GlobalRouter.swift in Sources */,
+				0CA5A6042CD153FE00A484DB /* CoffeeShopsRouter.swift in Sources */,
+				0CA5A5CB2CCFF53A00A484DB /* LoginInteractor.swift in Sources */,
+				0CA5A6692CDCB49E00A484DB /* LocalRegistrationEntity.swift in Sources */,
+				0CA5A6002CD153AD00A484DB /* CoffeeShopsPresenter.swift in Sources */,
+				0CA5A5962CCFC6D700A484DB /* SceneDelegate.swift in Sources */,
+				0CA5A6292CD37F8F00A484DB /* MenuPresenter.swift in Sources */,
+				0CA5A6322CD37FF500A484DB /* MenuEndpoint.swift in Sources */,
+				0CA5A6412CD4D65700A484DB /* OrdersPresenter.swift in Sources */,
+				0CA5A5C22CCFF15300A484DB /* ServerLoginEntity.swift in Sources */,
+				0CA5A62F2CD37FAD00A484DB /* MenuRouter.swift in Sources */,
+				0CA5A63F2CD4D64D00A484DB /* OrdersRouter.swift in Sources */,
+				0CA5A6632CDBF8E100A484DB /* RegistrationService.swift in Sources */,
+				0CA5A61F2CD27FF100A484DB /* MenuView.swift in Sources */,
+				0CA5A62D2CD37FA600A484DB /* MenuEntity.swift in Sources */,
+				0CA5A5DC2CD014A300A484DB /* CoffeTitleLabel.swift in Sources */,
+				0CA5A5D92CD0128C00A484DB /* Color+Extension.swift in Sources */,
+				0CA5A63D2CD4D63A00A484DB /* OrdersViewController.swift in Sources */,
+				0CA5A6082CD1545F00A484DB /* LocationEndpoint.swift in Sources */,
+				0CA5A6212CD29D0600A484DB /* CoffeeValueButton.swift in Sources */,
+				0CA5A6592CDBE8CC00A484DB /* RegistrationEntity.swift in Sources */,
+				0CA5A65B2CDBE8FA00A484DB /* RegistrationInteractor.swift in Sources */,
+				0CA5A6252CD37C8200A484DB /* MenuCell.swift in Sources */,
+				0CA5A5C82CCFF2CF00A484DB /* AuthService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0CA5A59E2CCFC6D900A484DB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0CA5A59F2CCFC6D900A484DB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0CA5A5A22CCFC6D900A484DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0CA5A5A32CCFC6D900A484DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0CA5A5A52CCFC6D900A484DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3ASY9C6DNH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CoffeApp/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.artyompetrichenko.CoffeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0CA5A5A62CCFC6D900A484DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3ASY9C6DNH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CoffeApp/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.artyompetrichenko.CoffeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0CA5A58B2CCFC6D700A484DB /* Build configuration list for PBXProject "CoffeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CA5A5A22CCFC6D900A484DB /* Debug */,
+				0CA5A5A32CCFC6D900A484DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CA5A5A42CCFC6D900A484DB /* Build configuration list for PBXNativeTarget "CoffeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CA5A5A52CCFC6D900A484DB /* Debug */,
+				0CA5A5A62CCFC6D900A484DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0CA5A5A72CCFC85000A484DB /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.3;
+			};
+		};
+		0CA5A5B52CCFC9C100A484DB /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0CA5A5A82CCFC85000A484DB /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0CA5A5A72CCFC85000A484DB /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		0CA5A5AA2CCFC85000A484DB /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0CA5A5A72CCFC85000A484DB /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		0CA5A5AC2CCFC85000A484DB /* ReactiveMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0CA5A5A72CCFC85000A484DB /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = ReactiveMoya;
+		};
+		0CA5A5AE2CCFC85000A484DB /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0CA5A5A72CCFC85000A484DB /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
+		};
+		0CA5A5B62CCFC9C100A484DB /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0CA5A5B52CCFC9C100A484DB /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 0CA5A5882CCFC6D700A484DB /* Project object */;
+}
